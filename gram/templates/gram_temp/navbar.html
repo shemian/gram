@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d1d7e0; color: #803bb1;">
+    <a class="navbar-brand" style="color: #803bb1;" href="/">
+        <h2>Snapgram</h2>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" style="color: #803bb1;" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" style="color: #803bb1;">
+            <li class="nav-item active">
+                <a class="nav-link" style="color: #803bb1;" href="/"><i class="fa fa-home" style="font-size:24px"
+                        aria-hidden="true"></i> Home
+                    <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="mb-0 h1 ml-auto mr-auto" id="searchform" action="{% url 'search' %}">
+            <input name="search_user" autocomplete="off" id="searching" class="form-control d-none d-md-block"
+                placeholder="Search User">
+        </form>
+        <span class="pull-right">
+            <a style="color: #803bb1;" href="{% url 'profile' user.username %}"><i class="fa fa-user-circle-o"
+                    style="font-size:24px" aria-hidden="true"></i> Profile</a>
+        </span>
+    </div>
+
+</nav>

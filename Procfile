@@ -1,0 +1,1 @@
+web: gunicorn Sznapgram.wsgi --log-file - 
